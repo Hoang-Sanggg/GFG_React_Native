@@ -6,7 +6,8 @@ const data = new Array(50).fill(0).map((_, index) => ({ id: index }));
 // [{id: 0}, {id: 1}, {id: 2}, ..., {id: 49}]
 
 export default function screen34() {
-  const viewableItems = useSharedValue<ViewToken[]>([]);
+  // const viewableItems = useSharedValue<ViewToken[]>([]);
+  const viewableItems = useSharedValue<ListItem[]>([]);
 
   return (
     <View style={styles.container}>
