@@ -1,8 +1,7 @@
 import React from 'react'
 import {View, FlatList, Text, StyleSheet, Animated, Pressable} from 'react-native'
 
-const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,
-38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63,,,,,];
+const data = [30, 40, 50, 60, 70, 80, 90, 100, 101, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141,];
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 
@@ -28,8 +27,8 @@ export default class AnimatedHeader extends React.Component {
 		
 		return (
 			<View style={styles.container}>
-        <Text style = {styles.text}>How Old Are You?</Text>
-        <Text style = {styles.text1}>Age in years. his will help us to personalize an excrise program plan that suits you.</Text>
+        <Text style = {styles.text}>What is Your Height?</Text>
+        <Text style = {styles.text1}>Height in cm. Don’t worry, you can always change it later</Text>
           <View style = {styles.containerList} >
             <AnimatedFlatList showsVerticalScrollIndicator={false}
               contentContainerStyle={{marginTop: 200}}
@@ -65,6 +64,7 @@ line:{
   top: 200,
 },
 containerList:{
+    
   alignItems: 'center',
   width: 100,
   height: 350,
@@ -72,10 +72,12 @@ containerList:{
 },
 	nonsenseItem: {
 		backgroundColor: 'red',
-    color: 'white',
+        color: 'white',
 		margin: 8,
+        
 	},
 	itemText: {
+        
 		backgroundColor: '#1A5653',
     color: 'gold',
 		fontSize: 20,
@@ -86,7 +88,7 @@ containerList:{
     position: 'absolute',
     width: 343,
     height: 37,
-    left: 90,
+    left: 80,
     top: 90,
 
    fontStyle: 'normal',
@@ -100,7 +102,7 @@ text1: {
   position: 'absolute',
   width: 366,
   height: 45,
-  left: 30,
+  left: 34,
   top: 139,
 
  fontStyle: 'normal',

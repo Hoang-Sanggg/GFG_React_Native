@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Screen37 from './src/views/screens/screen37';
 import Screen34 from './src/views/screens/screen34';
-
+import Screen35 from './src/views/screens/screen35';
 export default function App() {
   return (
     // <View style={styles.container}>
@@ -10,7 +10,7 @@ export default function App() {
     //   <StatusBar style="auto" />
     // </View>
     
-    <Screen34></Screen34>
+    <Screen35></Screen35>
   );
 }
 
