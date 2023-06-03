@@ -1,5 +1,5 @@
 import { Button, Text, View, Image, Pressable, title } from 'react-native'
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import { StyleSheet } from 'react-native'
 import { useFonts } from 'expo-font'
 
@@ -9,6 +9,7 @@ import { useFonts } from 'expo-font'
 
 export class screen37 extends Component {
   render() {
+    
     return (
       <View style = {styles.container}>
         <Text style = {styles.text}>Tell Us About Yourself </Text>
@@ -21,6 +22,7 @@ export class screen37 extends Component {
             <Image style = {styles.image} source={require('../components/picture/woman.png')}/>
             <Text style = {styles.textGT}>Woman</Text>
         </View>
+        
 
         <Pressable style={styles.button}>
            <Text style={styles.textbtn}>Contineu</Text>

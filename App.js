@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Screen37 from './src/views/screens/screen37';
 import Screen34 from './src/views/screens/screen34';
 import Screen35 from './src/views/screens/screen35';
+import LoginScreen from './src/views/screens/LoginScreen';
 export default function App() {
   return (
     // <View style={styles.container}>
@@ -10,7 +11,7 @@ export default function App() {
     //   <StatusBar style="auto" />
     // </View>
     
-    <Screen35></Screen35>
+    <LoginScreen></LoginScreen>
   );
 }
 
