@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, ImageBackground } from 'react-native'
-const screen7 = ()=>{
+import { Icon } from "react-native-vector-icons/icon";
+const screen31 = ()=>{
     return(
         <View style={styles.container}>
-            <View>
-              <Text style={styles.text}>Daily Workout Schedule</Text>
+            <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+             
+              <Text style={styles.text}>Like</Text>
             </View>
-            <View >
-                <Text style={styles.text2}>Upcoming Workout</Text>
-            </View>
+           
             <View style={styles.container2}>
                 
                 <ImageBackground
@@ -18,7 +18,7 @@ const screen7 = ()=>{
                 ></ImageBackground>
                 
                 <Text style={styles.text3}>Weightlifting Basic</Text>
-                <Text style={styles.text4}>Tomorrow,09:30</Text>
+                <Text style={styles.text4}><Text style={{color: '#E32020'}}>| </Text>6 Workouts for Beginner</Text>
             </View>
         </View>
       
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
 
     }
   });
-export default screen7;
+export default screen31;
