@@ -1,12 +1,26 @@
-import React from "react";
-import { View, Text, StyleSheet, ImageBackground } from 'react-native'
+import React, { useState } from "react";
+import { View, Text, StyleSheet, ImageBackground,FlatList } from 'react-native'
+import { SearchBar } from '@rneui/themed';
+const screen37 = ()=>{
+    
+const [search, setSearch] = useState("");
 
-const screen31 = ()=>{
+const updateSearch = (search) => {
+  setSearch(search);
+};
     return(
         <View style={styles.container}>
-            <View style={{flexDirection: 'row', justifyContent: 'center'}}>
-             
-              <Text style={styles.text}>Like</Text>
+            <View style={styles.view}>
+            <SearchBar
+                 placeholder="Weightlifting Basic"
+                 onChangeText={updateSearch}
+                 value={search}
+              />
+            
+            </View>
+                <Text style={styles.text5}>Search Results</Text>
+            <View>
+
             </View>
            
             <View style={styles.container2}>
@@ -70,8 +84,21 @@ const styles = StyleSheet.create({
         fontWeight: 600,
         fontSize: 14,
     },
+    text5:{
+      
+        color: '#FFFFFF',
+        textAlign: 'center',
+        fontWeight: 500,
+        fontSize: 14,
+    },
     icon:{
 
-    }
+    },
+    view: {
+        marginTop: 71,
+        marginLeft: 61,
+        marginRight:22,
+        marginBottom: 20
+      },
   });
-export default screen31;
+export default screen37;
