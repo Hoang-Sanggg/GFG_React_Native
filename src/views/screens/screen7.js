@@ -2,23 +2,29 @@ import React from "react";
 import { View, Text, StyleSheet } from 'react-native'
 const screen7 = ()=>{
     return(
-        <View
-            style={{
-                backgroundColor: '#1E1E1E',
-                flex: 1,
-            }}>
-            <View
-            style={{
-                flex: 1,
-                margin: '0 auto',
-            }}>
-                <Text>Daily Workout Schedule</Text>
+        <View style={styles.container}>
+            <View>
+              <Text style={styles.text}>Daily Workout Schedule</Text>
             </View>
-        </View>    
+        </View>
       
     
 
      
     )
 }
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#1E1E1E',
+      alignItems: 'center',
+     
+    },
+    text: {
+        fontSize: 24,
+        fontWeight: 700,
+        color: '#FFFFFF',
+      
+    },
+  });
 export default screen7;

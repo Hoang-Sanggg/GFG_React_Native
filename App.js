@@ -1,18 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import screen7 from './src/views/screens/screen7';
+import Screen7 from './src/views/screens/screen7';
 export default function App() {
   return (
-    <View>
-      <screen7></screen7>
-    </View>
+    <Screen7/>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    flex: 0,
+    backgroundColor: '#1E1E1E',
     alignItems: 'center',
     justifyContent: 'center',
   },
