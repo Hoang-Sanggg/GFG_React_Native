@@ -12,8 +12,8 @@ const screen7 = ()=>{
             <View style={styles.container2}>
                 <ImageBackground
                 resizeMode={'stretch'}
-                style={{flex:1}}
-                source={require('src\images\Rectangle10.png')}
+                style={{flex:1, height:171}}
+                source={require('../components/images/man.png')}
                 ></ImageBackground>
             </View>
         </View>
@@ -27,16 +27,15 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#1E1E1E',
-     
+    
      
     },
     container2:{
-        
-        justifyContent: 'center',
-        backgroundColor: '#fff',
+        marginTop:20,
+        alignSelf: 'center',
         flex: 1,
         width: '89%',
-        height: 171,
+      
 
     },
     text: {
