@@ -39,6 +39,43 @@ const screen9 = ()=>{
                     <Text style={styles.personaldataText2}>Age</Text>
                 </View>
             </View>
+            <View style={{marginLeft:22,marginRight:22,}}>
+                <View>
+                    <Text style={styles.text3}>
+                        Account
+                    </Text>
+                </View>
+                <View style={{flex:0,backgroundColor: '#FFFFFF',height:1,marginTop:12}}></View>
+                <View style={{flex:0, flexDirection: "row",justifyContent:'space-between'}}>
+                    <Text style={styles.text5}>Personal Data</Text>
+                    
+                </View>
+                <View style={{flex:0, flexDirection: "row",justifyContent:'space-between'}}>
+                    <Text style={styles.text5}>Achievement</Text>
+                    
+                </View>
+                <View style={{flex:0, flexDirection: "row",justifyContent:'space-between'}}>
+                    <Text style={styles.text5}>Activity history</Text>
+                    
+                </View>
+                <View style={{flex:0, flexDirection: "row",justifyContent:'space-between'}}>
+                    <Text style={styles.text5}>Like</Text>
+                    
+                </View>
+                <View style={{flex:0,backgroundColor: '#FFFFFF',height:1,marginTop:12}}></View>
+
+                <View>
+                    <Text style={styles.text3}>
+                        Notification
+                    </Text>
+                </View>
+                <View style={{flex:0, flexDirection: "row",justifyContent:'space-between'}}>
+                    <Text style={styles.text5}>Pop-up notification</Text>
+                    
+                </View>
+                
+            </View>
+            
         </View>
       
     
@@ -60,12 +97,17 @@ const styles = StyleSheet.create({
         height: 94,
     },
     container3:{
+       
         flexDirection: "row",
-        flex:2,
+        flex:0,
         justifyContent: 'space-between',
         marginLeft: 22,
         marginRight:22,
         marginTop:24,
+     
+    },
+    container4: {
+
     },
     text: {
         textAlign: 'center',
@@ -89,10 +131,9 @@ const styles = StyleSheet.create({
 
     },
     text3:{
-        marginLeft: 20,
-        marginTop: 18,
+        marginTop: 45,
         fontSize: 22,
-        fontWeight: 600,
+        fontWeight: 700,
         color: '#FFFFFF',
     },
     text4:{
@@ -101,6 +142,12 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         marginTop: 8,
         marginLeft:14,
+    },
+    text5:{
+        marginTop:22,
+        fontSize:22,
+        fontWeight: 300,
+        color: '#FFFFFF',
     },
     personalImg:{
         width: '100%',
