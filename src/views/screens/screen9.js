@@ -155,6 +155,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     personaldataView:{
+        borderRadius: 10,
         width: 94,
         height: 94,
         flex: 0,

@@ -7,7 +7,7 @@ import Screen30 from './src/views/screens/screen30';
 import Screen9 from './src/views/screens/screen9';
 export default function App() {
   return (
-    <Screen9/>
+    <Screen7/>
   );
 }
 

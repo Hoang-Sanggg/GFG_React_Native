@@ -22,7 +22,7 @@ const screen30 = ()=>{
                 <Text style={styles.text2}>Username</Text>
             </View>
 
-            <View style={{flex: 0, marginLeft: 20, marginTop:5,marginRight:20,  backgroundColor: '#434B53', width: '89%', height: '6%',paddingLeft:10,}}>
+            <View style={{flex: 0, marginLeft: 20, marginTop:5,marginRight:20,  backgroundColor: '#434B53', width: '89%', height: '6%',paddingLeft:10, borderRadius:10}}>
                 <TextInput 
                 style={styles.textInput}
                 >Jedro Suidrop
@@ -32,7 +32,7 @@ const screen30 = ()=>{
             <View>
                 <Text style={styles.text3}>Email</Text>
             </View>
-            <View style={{flex: 0, marginLeft: 20, marginTop:5,marginRight:20,  backgroundColor: '#434B53', width: '89%', height: '6%',paddingLeft:10,}}>
+            <View style={{flex: 0, marginLeft: 20, marginTop:5,marginRight:20,  backgroundColor: '#434B53', width: '89%', height: '6%',paddingLeft:10, borderRadius: 10}}>
                 <TextInput 
                 style={styles.textInput}
                 >JefroSuiropKu@gmail.com
@@ -120,6 +120,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     personaldataView:{
+        borderRadius: 10,
         width: 94,
         height: 94,
         flex: 0,
