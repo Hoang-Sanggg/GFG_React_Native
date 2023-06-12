@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Text, FlatList, Image, TouchableOpacity, ImageBackground, SafeAreaView } from 'react-native';
 const backgroundImg = require('../assets/images/OIP.png');
 
-export default function HomeScreen({ navigation }) {
+export default function MainScreen({ navigation }) {
     const [data, setData] = useState([]);
 
     useEffect(() => {

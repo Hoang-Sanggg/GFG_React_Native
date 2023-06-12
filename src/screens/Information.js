@@ -3,6 +3,9 @@ import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import { useNavigation, StackActions } from '@react-navigation/native';
 
 const UserProfileScreen = ({ navigation }) => {
+    const onPressButton = () => {
+        navigation.navigate('MainScreen');
+    };
     return (
         <View style={styles.container}>
             <View style={styles.avatarContainer}>
@@ -30,7 +33,7 @@ const UserProfileScreen = ({ navigation }) => {
                 <Text style={styles.label}>Mục tiêu tập luyện:</Text>
                 <Text style={styles.text}>Giảm cân và tăng cơ</Text>
 
-                <TouchableOpacity style={styles.button} onPress={navigation.dispatch(StackActions.replace('MainScreen'))}>
+                <TouchableOpacity style={styles.button} onPress={onPressButton}>
                     <Text>Bắt đầu ngay</Text>
                 </TouchableOpacity>
 

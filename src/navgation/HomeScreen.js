@@ -19,11 +19,12 @@ export default function MainScreen({ navigation }) {
 
     const handleNotificationPress = () => {
         // Xử lý sự kiện khi biểu tượng thông báo được nhấn
+        navigation.navigate('Notification');
     };
 
     const handlePlan = () => {
         // Xử lý sự kiện khi biểu tượng hồ sơ được nhấn
-        navigation.navigate('');
+        navigation.navigate('WorkoutPlan');
     };
 
 
@@ -185,7 +186,7 @@ const styles = StyleSheet.create({
     name: {
         marginTop: 10,
         marginStart: 10,
-        fontFamily: 'verdana',
+
         fontWeight: 'bold',
         color: 'white',
         fontSize: 18,
@@ -193,7 +194,7 @@ const styles = StyleSheet.create({
     id: {
         marginTop: 5,
         marginStart: 10,
-        fontFamily: 'verdana',
+
         fontWeight: 'bold',
         color: 'white',
         fontSize: 18,

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Text, FlatList, Image, TouchableOpacity, ImageBackground, SafeAreaView } from 'react-native';
 const backgroundImg = require('../assets/images/OIP.png');
 
-export default function HomeScreen({ navigation }) {
+export default function MainScreen({ navigation }) {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -28,18 +28,21 @@ export default function HomeScreen({ navigation }) {
             <View style={styles.item}>
                 <Image
                     style={styles.image}
-                    source={{ uri: item.image }}
+                    source={{ uri: 'https://th.bing.com/th/id/OIP.uBp7RbuzKP95YlZ9G2CFlAHaE8?pid=ImgDet&w=1024&h=683&rs=1' }}
                 />
                 <View style={styles.textContainer}>
                     <Text style={styles.title}>Tên : {item.name}</Text>
-                    <Text style={styles.subtitle}>Số lượng : {item.quantity}</Text>
                 </View>
+                <Image
+                    style={styles.image1}
+                    source={{ uri: 'https://th.bing.com/th/id/OIP.1zD168uB0K--lbu8bduOrQHaIA?pid=ImgDet&rs=1' }}
+                />
             </View>
         </TouchableOpacity>
     );
 
     return (
-        <ImageBackground source={backgroundImg} style={styles.background}>
+        <ImageBackground style={styles.background}>
             <SafeAreaView style={styles.container}>
                 <Text style={styles.titleText}>Danh sách sản phẩm</Text>
                 <FlatList
@@ -48,7 +51,6 @@ export default function HomeScreen({ navigation }) {
                     keyExtractor={item => item.id.toString()}
                     style={styles.flatList}
                     contentContainerStyle={styles.flatListContainer}
-
                 />
             </SafeAreaView>
         </ImageBackground >
@@ -90,10 +92,11 @@ const styles = StyleSheet.create({
     },
     item: {
         flexDirection: 'row',
-        padding: 16,
-        marginVertical: 8,
-        marginHorizontal: 16,
-        borderRadius: 8,
+        alignItems: 'center', // Add this line to center the items vertically
+        padding: 8,
+        marginVertical: 4,
+        marginHorizontal: 8,
+        borderRadius: 25,
         backgroundColor: '#ffffff',
         shadowColor: '#000',
         shadowOffset: {
@@ -105,9 +108,9 @@ const styles = StyleSheet.create({
         elevation: 5,
     },
     image: {
-        width: 80,
+        width: 130,
         height: 80,
-        borderRadius: 8,
+        borderRadius: 20,
     },
     textContainer: {
         flex: 1,
@@ -115,12 +118,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     title: {
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: 'bold',
-        marginBottom: 4,
+        marginTop: 5,
     },
     subtitle: {
         fontSize: 16,
         color: '#888888',
     },
+    image1: {
+        width: 15,
+        height: 15,
+    }
 });

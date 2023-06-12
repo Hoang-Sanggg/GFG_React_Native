@@ -162,12 +162,11 @@ export default function MainScreen({ navigation }) {
                 inactiveTintColor: '#999999',
                 labelStyle: { fontSize: 12 },
                 style: { borderTopWidth: 1, borderTopColor: '#cccccc' },
-            }}
-        >
+            }}>
             <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-            <Tab.Screen name="Workouts" component={WorkoutsScreen} options={{ headerShown: false }} />
-            <Tab.Screen name="Nutrition" component={NutritionScreen} options={{ headerShown: false }} s />
-            <Tab.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
+            <Tab.Screen name="Workouts" component={WorkoutsScreen} options={{ headerTitle: 'Bài Tập' }} />
+            <Tab.Screen name="Nutrition" component={NutritionScreen} options={{ headerTitle: 'Bữa ăn khoa học' }} />
+            <Tab.Screen name="Profile" component={ProfileScreen} options={{ headerTitle: 'Thông tin cá nhân ' }} />
         </Tab.Navigator>
     );
 }

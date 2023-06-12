@@ -12,18 +12,17 @@ export default function Details({ route }) {
         itemCategory } = route.params;
     return (
         <View style={styles.container}>
-            <Text style={styles.titleText}>Chi tiết sản phẩm</Text>
+            <Text style={styles.titleText}>{itemName}</Text>
             <Image
                 style={styles.image}
                 source={{ uri: itemImage }}
             />
-
             <View style={styles.textContainer}>
-                <Text style={styles.title}>{itemName}</Text>
-                <Text style={styles.subtitle}>Số lượng: <Text style={styles.subtitleText}>{itemQuantity}</Text></Text>
-                <Text style={styles.subtitle}>Giá sản phẩm: <Text style={styles.subtitleText}>{itemPrice}</Text></Text>
-                <Text style={styles.subtitle}>Mô tả: <Text style={styles.subtitleText}>{itemDescription}</Text></Text>
-                <Text style={styles.subtitle}>Loại sản phẩm: <Text style={styles.subtitleText}>{itemCategory}</Text></Text>
+                <Text style={{ fontSize: 20 }}>Mô tả : </Text>
+                <Text style={styles.description}>Vị trí bắt đầu: đứng với đầu gối hơi khuỵu và di chuyển người về phía trước một chút, hơi cúi lưng. Giữ tay cầm với khoảng cách hẹp hơn vai. Cố gắng duỗi tay và gần chạm vào chân. Khi duỗi tay thở ra. Khi trở về vị trí ban đầu thì hít vào.</Text>
+                {/* <Text style={styles.description}>{itemName}</Text> */}
+                <Text style={{ fontSize: 20, marginTop: 16 }}>Hãy nhớ: </Text>
+                <Text style={styles.description}>Giữ cùi chỏ tì vào người, không được di chuyển cùi chỏ lên xuống khi co duỗi tay. Ghi nhớ vị trí lưng dưới của bạn.</Text>
             </View>
         </View>
     );
@@ -33,52 +32,25 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#ffffff',
-        justifyContent: 'center',
-        alignItems: 'center',
     },
     titleText: {
         fontSize: 24,
         fontWeight: 'bold',
         color: '#333333',
-        marginBottom: 50,
-        marginTop: 0,
-        fontFamily: 'Consolas',
+        marginTop: 20,
+        marginStart: 10,
     },
-    title: {
-        fontSize: 32,
-        fontWeight: 'bold',
-        marginBottom: 32,
+    textContainer: {
+        margin: 16,
     },
-    inputContainer: {
-        width: '80%',
+    description: {
+        marginTop: 14,
+        fontSize: 16,
     },
     image: {
         width: 250,
         height: 250,
         marginRight: 16,
-    },
-    input: {
-        borderWidth: 1,
-        borderColor: '#cccccc',
-        padding: 8,
-        marginBottom: 16,
-        borderRadius: 8,
-        fontSize: 16,
-    },
-    button: {
-        backgroundColor: '#007bff',
-        padding: 12,
-        borderRadius: 8,
-        alignItems: 'center',
-    },
-    buttonText: {
-        color: '#ffffff',
-        fontSize: 16,
-        fontWeight: 'bold',
-    },
-    textContainer: {
-        padding: 16,
-        width: '80%',
     },
     subtitle: {
         fontSize: 16,
